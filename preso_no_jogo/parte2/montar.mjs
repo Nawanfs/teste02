@@ -30,9 +30,20 @@ for (const c of cfg.cenas) {
   const out = path.join(TMP, `${c.id}.mp4`);
   const src = c.arquivo && path.join(AQUI, c.arquivo);
   const norm = `scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H},fps=${FPS},setsar=1,format=yuv420p`;
+  const img = c.imagem && path.join(AQUI, c.imagem);
   if (src && fs.existsSync(src)) {
-    // se o clipe for mais curto que a cena, congela o último quadro
-    ff(['-i', src, '-vf', `${norm},tpad=stop_mode=clone:stop_duration=${c.dur}`, '-t', String(c.dur), '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', out]);
+    // se o clipe for mais curto que a cena, congela o último quadro; "reverso" toca de trás pra frente
+    const rev = c.reverso ? 'reverse,' : '';
+    ff(['-i', src, '-vf', `${rev}${norm},tpad=stop_mode=clone:stop_duration=${c.dur}`, '-t', String(c.dur), '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', out]);
+  } else if (img && fs.existsSync(img)) {
+    // sem o vídeo: a imagem-chave com zoom lento (e um tranco rápido se houver susto nesta cena)
+    const n = c.dur * FPS;
+    const susto = cfg.sustos.find((s) => s >= t0 && s < t0 + c.dur);
+    const zs = susto != null ? Math.round((susto - t0) * FPS) : -1;
+    const z = zs >= 0 ? `if(lt(on,${zs}),1+0.06*on/${zs},1.25+0.05*(on-${zs})/${n})` : `1+0.10*on/${n}`;
+    ff(['-loop', '1', '-i', img, '-vf',
+      `scale=${W * 2}:${H * 2}:force_original_aspect_ratio=increase,crop=${W * 2}:${H * 2},zoompan=z='${z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${n}:s=${W}x${H}:fps=${FPS},format=yuv420p`,
+      '-frames:v', String(n), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', out]);
   } else {
     const label = c.arquivo ? `FALTA ${c.id}` : '';
     const dt = label ? `,drawtext=fontfile=${FONTES}/SpaceGrotesk-Bold.otf:text='${label}':fontcolor=0x2a4a6a:fontsize=60:x=(w-tw)/2:y=h*0.42` : '';

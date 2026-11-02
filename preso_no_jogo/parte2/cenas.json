@@ -1,49 +1,173 @@
 {
   "titulo": "PRESO NO JOGO",
-  "relogio": { "de": "03:20", "ate": "03:41" },
+  "relogio": {
+    "de": "03:20",
+    "ate": "03:41"
+  },
   "regras": [
     "1. (regra 1 da Parte 1)",
     "2. (regra 2 da Parte 1)",
     "3. (regra 3 da Parte 1)"
   ],
-  "regra4": { "texto": "4. NÃO RESPONDA AO SEU NOME", "entra": 16.0 },
+  "regra4": {
+    "texto": "4. NÃO RESPONDA AO SEU NOME",
+    "entra": 16.0
+  },
   "cenas": [
-    { "id": "1_gancho",     "arquivo": "clipes/1_gancho.mp4",     "dur": 8 },
-    { "id": "2_escolha",    "arquivo": "clipes/2_escolha.mp4",    "dur": 6 },
-    { "id": "3_rua",        "arquivo": "clipes/3_rua.mp4",        "dur": 7 },
-    { "id": "4_mae",        "arquivo": "clipes/4_mae.mp4",        "dur": 8 },
-    { "id": "5_fuga",       "arquivo": "clipes/5_fuga.mp4",       "dur": 6 },
-    { "id": "6_reviravolta","arquivo": "clipes/6_reviravolta.mp4","dur": 8 },
-    { "id": "7_portao",     "arquivo": "clipes/7_portao.mp4",     "dur": 5 },
-    { "id": "8_final",      "arquivo": null,                      "dur": 5 }
+    {
+      "id": "1_gancho",
+      "arquivo": "clipes/1_gancho.mp4",
+      "dur": 8
+    },
+    {
+      "id": "2_escolha",
+      "arquivo": "clipes/2_escolha.mp4",
+      "dur": 6
+    },
+    {
+      "id": "3_rua",
+      "arquivo": "clipes/3_rua.mp4",
+      "dur": 7,
+      "imagem": "quadros/3_rua.jpg"
+    },
+    {
+      "id": "4_mae",
+      "arquivo": "clipes/4_mae.mp4",
+      "dur": 8,
+      "imagem": "quadros/4_mae.jpg"
+    },
+    {
+      "id": "5_fuga",
+      "arquivo": "clipes/5_fuga.mp4",
+      "dur": 6,
+      "imagem": "quadros/5_fuga.jpg"
+    },
+    {
+      "id": "6_reviravolta",
+      "arquivo": "clipes/6_reviravolta.mp4",
+      "dur": 8,
+      "imagem": "quadros/6_reviravolta.jpg"
+    },
+    {
+      "id": "7_portao",
+      "arquivo": "clipes/7_portao.mp4",
+      "dur": 5,
+      "imagem": "quadros/7_portao.jpg",
+      "reverso": true
+    },
+    {
+      "id": "8_final",
+      "arquivo": null,
+      "dur": 5
+    }
   ],
-  "sustos": [5.0, 27.0, 41.0],
+  "sustos": [
+    5.0,
+    27.0,
+    41.0
+  ],
   "legendas": [
-    [0.2, 2.4, "E SE O MONSTRO QUE", "COPIOU SEU CACHORRO..."],
-    [2.4, 4.2, "AGORA COPIASSE", "VOCÊ?"],
-    [4.2, 6.0, "\"MAX...", "VEM CÁ.\""],
-
-    [8.0, 11.0, "ESCOLHA A:", "A JANELA"],
-    [11.0, 14.0, "LÁ DE DENTRO, SUA VOZ:", "\"VOLTA AQUI!\""],
-
-    [14.0, 16.0, "LÁ FORA,", "A RUA ESTÁ VAZIA."],
-    [16.0, 18.5, "REGRA 4:", "ELA TAMBÉM COPIA VOZES."],
-    [18.5, 21.0, "SE CHAMAREM SEU NOME...", "NÃO RESPONDA."],
-
-    [21.0, 23.5, "UMA PORTA SE ABRE.", "É A SUA MÃE."],
-    [23.5, 25.0, "\"FILHO! ENTRA,", "AQUI É SEGURO.\""],
-    [25.0, 26.8, "ELA SORRI...", "SEM PISCAR."],
-
-    [29.0, 31.5, "ATRÁS DE VOCÊ, PASSOS.", "PRIMEIRO DOIS... DEPOIS QUATRO."],
-    [31.5, 35.0, "\"SE O CACHORRO ROSNAR...", "VOCÊ NÃO ENTRA.\""],
-
-    [35.0, 37.0, "O MAX TE CHEIRA...", "E ROSNA."],
-    [37.0, 39.3, "MAS NÃO PRA VOCÊ.", "PRA TRÁS DE VOCÊ."],
-    [39.3, 40.8, "\"BOM GAROTO,", "MAX.\""],
-
-    [43.0, 45.5, "O PORTÃO FECHA.", "E O MAX..."],
-    [45.5, 48.0, "FICOU DO LADO", "DE FORA."],
-
-    [48.0, 53.0, "A MAIS VOTADA", "VIRA A PARTE 3"]
+    [
+      4.2,
+      6.0,
+      "\"MAX...",
+      "VEM CÁ.\""
+    ],
+    [
+      8.0,
+      11.0,
+      "ESCOLHA A:",
+      "A JANELA"
+    ],
+    [
+      11.0,
+      14.0,
+      "LÁ DE DENTRO, SUA VOZ:",
+      "\"VOLTA AQUI!\""
+    ],
+    [
+      14.0,
+      16.0,
+      "LÁ FORA,",
+      "A RUA ESTÁ VAZIA."
+    ],
+    [
+      16.0,
+      18.5,
+      "REGRA 4:",
+      "ELA TAMBÉM COPIA VOZES."
+    ],
+    [
+      18.5,
+      21.0,
+      "SE CHAMAREM SEU NOME...",
+      "NÃO RESPONDA."
+    ],
+    [
+      21.0,
+      23.5,
+      "UMA PORTA SE ABRE.",
+      "É A SUA MÃE."
+    ],
+    [
+      23.5,
+      25.0,
+      "\"FILHO! ENTRA,",
+      "AQUI É SEGURO.\""
+    ],
+    [
+      25.0,
+      26.8,
+      "ELA SORRI...",
+      "SEM PISCAR."
+    ],
+    [
+      29.0,
+      31.5,
+      "ATRÁS DE VOCÊ, PASSOS.",
+      "PRIMEIRO DOIS... DEPOIS QUATRO."
+    ],
+    [
+      31.5,
+      35.0,
+      "\"SE O CACHORRO ROSNAR...",
+      "VOCÊ NÃO ENTRA.\""
+    ],
+    [
+      35.0,
+      37.0,
+      "O MAX TE CHEIRA...",
+      "E ROSNA."
+    ],
+    [
+      37.0,
+      39.3,
+      "MAS NÃO PRA VOCÊ.",
+      "PRA TRÁS DE VOCÊ."
+    ],
+    [
+      39.3,
+      40.8,
+      "\"BOM GAROTO,",
+      "MAX.\""
+    ],
+    [
+      43.0,
+      45.5,
+      "O PORTÃO FECHA.",
+      "E O MAX..."
+    ],
+    [
+      45.5,
+      48.0,
+      "FICOU DO LADO",
+      "DE FORA."
+    ],
+    [
+      48.0,
+      53.0,
+      "A MAIS VOTADA",
+      "VIRA A PARTE 3"
+    ]
   ]
 }
