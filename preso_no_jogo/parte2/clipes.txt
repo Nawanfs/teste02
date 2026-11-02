@@ -4,5 +4,5 @@
 3_rua  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/f0fa7302-4e1a-4175-b00d-768a4c49933a_seed1969501805_1793580153198_6ff7844b.mp4
 4_mae  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/1f01402c-ef59-42db-a604-dd023a8e70d4_seed1768649848_1793580310236_0d9e36b8.mp4
 5_fuga  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/00f11e9c-aa4d-4f81-b978-fc6e7f3dea86_seed1817339422_1793580298514_57c4e40e.mp4
-6_reviravolta -
-7_portao -
+6_reviravolta  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/ac9960a1-84e7-4fcc-b653-443a8868f06f_seed1199924563_1793580408861_f6ec4e42.mp4
+7_portao  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/6eee7218-384f-4ed8-b0c9-880d57071577_seed2050357613_1793580397952_355415b1.mp4
