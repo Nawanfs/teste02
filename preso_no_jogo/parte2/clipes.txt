@@ -1,0 +1,8 @@
+# nome  url (OpenArt, PixVerse V6 540p)
+1_gancho  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/e42db858-f4aa-4cfc-8a29-e66c96d34834_seed259736821_1793580148882_2f0d898f.mp4
+2_escolha -
+3_rua  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/f0fa7302-4e1a-4175-b00d-768a4c49933a_seed1969501805_1793580153198_6ff7844b.mp4
+4_mae -
+5_fuga -
+6_reviravolta -
+7_portao -
