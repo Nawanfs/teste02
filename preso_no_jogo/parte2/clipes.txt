@@ -2,7 +2,7 @@
 1_gancho  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/e42db858-f4aa-4cfc-8a29-e66c96d34834_seed259736821_1793580148882_2f0d898f.mp4
 2_escolha -
 3_rua  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/f0fa7302-4e1a-4175-b00d-768a4c49933a_seed1969501805_1793580153198_6ff7844b.mp4
-4_mae -
-5_fuga -
+4_mae  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/1f01402c-ef59-42db-a604-dd023a8e70d4_seed1768649848_1793580310236_0d9e36b8.mp4
+5_fuga  https://cdn.openart.ai/openart-ai/production/2026-11/create-video/6ZXiRQA7mSyzOsT0bqwf/00f11e9c-aa4d-4f81-b978-fc6e7f3dea86_seed1817339422_1793580298514_57c4e40e.mp4
 6_reviravolta -
 7_portao -
